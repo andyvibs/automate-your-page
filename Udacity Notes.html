@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Udacity Notes</title>
+</head>
+  <body class="page">
+  <a name="top"></a>
+
+
+<!-- HMTL comment, computer doesn't read this-->
+
+  
+    
+ <div class="title">
+    <h1>Intro to Computer Programming Nanodegree Notes</h1>
+    <h5>Andy Vibert</h5>
+ </div> 
+ <div class="TOC">
+  <h2>Table of Contents</h2>
+  <ol>
+    <li><a href="#lesson-1">Lesson 1: The Basics of the Web and HTML</a>
+      <ul>
+        <li><a href="#lesson-1-1">How the Web Works</a></li>
+        <li><a href="#lesson-1-2">HTML</a></li>
+        <li><a href="#lesson-1-3">Tags and Elements</a></li>
+        <li><a href="#lesson-1-4">Why Computers are Stupid</a></li>
+        <li><a href="#lesson-1-5">Inline vs Block Elements</a></li>
+      </ul>
+    </li>  
+    <li><a href="#lesson-2">Lesson 2: Creating a Structured Document with HTML</a>
+      <ul>
+        <li><a href="#lesson-2-1">Developer Tools (in the Browser)</a></li>
+        <li><a href="#lesson-2-2">The "Tree-Like Structure" of HTML</a></li>
+        <li><a href="#lesson-2-3">The relationship between indented HTML and boxes</a></li>
+        <li><a href="#lesson-2-4">Text Editors (for programming)</a></li>
+      </ul>
+    </li>  
+    <li><a href="#lesson-3">Lesson 3: Adding CSS Style to HTML Structure</a>
+      <ul>
+        <li><a href="#lesson-3-1">Avoid Repitition</a></li>
+        <li><a href="#lesson-3-2">CSS</a></li>
+      </ul>  
+    </li>
+    <li>
+      <a href="#additionalNotes">Additional Notes</a>
+        <ul>
+          <li><a href="#terms">Terms</a>
+          </li>
+        </ul>
+    </li> 
+    <li>
+      <a href="#python">Python</a>
+        <ul>
+          <li><a href="#python-1">What is a Variable?</a></li>
+          <li><a href="#python-2">Variable Assignment</a></li>
+          <li><a href="#python-3">Equals Sign Clarification</a></li>
+          <li><a href="#python-4">Uses</a></li>
+          <li><a href="#python-5">Strings v Integers</a></li>
+          <li><a href="#python-6">Functions</a></li>
+          <li><a href="#python-7">Structured Data</a></li>
+          <li><a href="#python-8">Mutability</a></li>
+          <li><a href="#python-9">difference between APPEND and +</a></li>
+          <li><a href="#python-10">Lists</a></li>
+          <li><a href="#python-11">For Loops</a></li>
+          <li><a href="#python-12">Index Method</a></li>
+        </ul>
+    </li> 
+  </ol>
+ </div> 
+
+
+
+
+  
+  
+  <!-- To add logical structure, I chose to put each lesson into it's own div. By putting a box around each lesson, the structure of the code reflects the structure of the lessons -->
+  <div class="lesson">
+    <h3 id="lesson-1">Lesson 1: The Basics of the Web and HTML</h3>
+    
+    <!-- I also put each new concept inside of a div. This is concept 1 -->
+    <div class="concept">
+        <h4 id="lesson-1-1">How the Web Works</h4>
+        The web is a bunch of computers that communicate with
+        each other. When a person goes to a web page like
+        www.google.com, their computer sends a <em>HTTP Request</em>
+        to a <em>server</em>. The server finds the appropriate
+        HTML document and sends it back to the user's computer where
+        a <em>web browser</em> interprets the page and displays it
+        on the user's screen.
+        <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/e-48329854/m-48480496">This video</a>
+        does a good job of explaining more.
+      
+    </div>
+    <!-- And this is where concept 1 ends. Note how the indentation level now matches up with where lesson 1 began.-->
+    
+    <!-- Now concept 2 begins... -->
+    <div class="concept">
+        <h4 id="lesson-1-2">HTML</h4>
+      <p>
+        HTML stands for <em>Hypertext Markup Language.</em> HTML
+        documents form the majority of the content on the web.
+        HTML documents contain <em>text content</em> which describes
+        "what you see" and <em>markup</em> which describes "how it
+        looks". <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48724340">This video</a>
+        gives a good overview.
+      </p>
+    </div>
+    <div class="concept">
+        <h4 id="lesson-1-3">Tags and Elements</h4>
+      <p>
+        HTML documents are made of HTML <b>elements</b>. When
+        writing HTML, we tell browsers the type of each element
+        by using HTML <b>tags</b>.
+        <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48723444">This video</a>
+        explains the distinction well.
+      </p>
+    </div>
+    <div class="concept">
+        <h4 id="lesson-1-4">Why Computers are Stupid</h4>
+      <p>
+        Computers are stupid because they interpret instructions
+        literally. This makes them very unforgiving since a small
+        mistake by a programmer can cause huge problems in a program.
+      </p>
+    </div>
+    <div class="concept">
+        <h4 id="lesson-1-5">Inline vs Block Elements</h4>
+      <p>
+        HTML elements are either <b>inline</b> or <b>block</b>.
+        Block elements form an "invisible box" around the
+        content inside of them.
+      </p>
+    </div>
+  </div>
+  <!-- Notice that the indentation level is back to where it was when the <div> for Lesson 1 began. And now the div for lesson two begins... -->
+  <div class="lesson">
+    <h3 id="lesson-2">Lesson 2: Creating a Structured Document with HTML</h3>
+    <div class="concept">
+        <h4 id="lesson-2-1">Developer Tools (in the Browser)</h4>
+      <p>
+        HTML elements are either <b>inline</b> or <b>block</b>.
+        Block elements form an "invisible box" around the
+        content inside of them.
+      </p>
+    </div>
+    <div class="concept">
+        <h4 id="lesson-2-2">The "tree-like structure" of HTML</h4>
+      <p>
+        The "tree-like structure" comes from the fact that HTML
+        elements can have other elements inside of them. You can
+        draw this relationship like a family tree. My mother had
+        multiple children. So did her mother, and so on...
+        <br>
+        In a browser, this structure shows up as a series of
+        nested boxes. There are oxes inside of boxes inside of
+        boxes, and so on...
+      </p>
+    </div>
+    <div class="concept">
+        <h4 id="lesson-2-3">The relationship between indented HTML and boxes</h4>
+      <p>
+        When you read an HTML document as <em>text</em>, you see a wave
+        of changing indentations going up and down the left side
+        of the document. The more indented an element is, the more
+        deeply nested it's corresponding "box" is.
+      </p>
+    </div>
+    <div class="concept">
+        <h4 id="lesson-2-4">Text Editors (for programming)</h4>
+      <p>
+        When writing code, programmers use special text editors (like
+        Sublime Text for example). These editors make the programmer's
+        life easier. For example, some text editors will automatically
+        generate a closing HTML tag when you write an opening tag.
+      </p>
+     <p>When adding an Image to a webpage by referencing an image file on your computer, the image file (or folder which includes the image) must be saved in the same file as the HTML code.
+      </p>
+    </div>
+  </div>
+  <div class="lesson">
+    <h3 id="lesson-3">Lesson 3: Adding CSS Style to HTML Structure</h3>
+    <div class="concept">
+        <h4 id="lesson-3-1">Avoid Repitition</h4>
+      <p>Repitition can create headaches, and even major problems, in the future. The structure and organization of the code you write can help avoid repitition. <br>
+        Quote from the example notes - "<b>Consistency:</b> In this web page, I wanted every lesson to look the same. Instead of manually giving each one the same style, I was able to assign each lesson div the same class and then specify the style for that class in only one place! By avoiding repetion, it's now very easy for me to make changes to this style."
+       </p>
+       <p>Avoiding repitition can mean avoiding unnecessary copy and paste errors. If you're repeating yourself, there's likely a more efficient, safer (lower chance of bug) way to write the code.</p>
+    </div>
+      
+    <div class="concept">
+      <h4 id="lesson-3-2">CSS</h4>
+      <p>CSS (Cascading Style Sheets) allows programmers to control the style of HTML elements. By giving similar elements the same class name, the programmer can apply a style change across the entire class, affecting each element in the class.
+      </p>
+      <div>
+      <p>
+        cascading - most specific rule applies<br>
+        Inheritance - style applied to an element will be applied to all descendant elements<br>
+      </p>
+    </div>
+    </div>
+    <div class="lesson">
+      <h3 id="additionalNotes">Additional Notes</h3>
+        <div class="concept">
+          <h4 id="terms">Terms</h4>
+          <ul>
+            <li>Computer
+              <ul>
+                <li>Machine which can run programs to perform tasks much quicker and more efficiently than humans.</li>
+              </ul>
+            </li>
+            <li>Program
+              <ul>
+                <li>Instructions for a computer, written in a code or language that it can understand</li>
+              </ul> 
+            </li>
+            <li>Programming Languages
+              <ul>
+                <li>Just like in the normal world, there are many sets of rules which communication can take place by (languages). Different people are programmed (learn) different sets of rules, or languages, and can therefore understand and use only those languages. This is similar to the idea of programming languages, some computers run different rules.</li>
+              </ul>
+            </li>
+            <li>Interpreter
+              <ul>
+                <li>Telling a computer to do something requires many basic assumptions, too many to think about each time we write code. An interpreter like Python simplifies the language, and allows us to write a program which gets translated into a language the computer can understand.</li>
+              </ul>
+            </li>
+            <li>Python
+              <ul>
+                <li>An example of an Interpreter.
+                </li>
+              </ul>
+            </li>
+            <li>Grammar
+              <ul>
+                <li>The rules by which a code (or language) exist and run by. While humans can be forgiving of grammar mistakes (if I say "Me going to store 2 o'clock" people will be confused, but likely understand what I'm saying. Computers are standardized, which means it does not forgive grammar mistakes
+                </li>
+              </ul>
+            </li>
+            <li>Python Expressions
+              <ul>
+                <li>Legal Python statements that follow Python's grammar rules.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </div>
+    <div class="lesson">
+      <h3 id="python">Python</h3>
+      <div class="concept">
+        <h4 id="python-1">Variables</h4>
+        <p>Variables in Python and other computer codes are similar to any type of variable - the variable represents something else, so we can easily change that value. It also helps make code much easier to read.</p>
+      </div>
+      <div class="concept">
+        <h4 id="python-2">Variable Assignment</h4>
+        <p>The process of giving a variable a new value is called "Assignment." This is done by entering the name of the variable, an equals (=) sign, and then the desired value.</p>
+      </div>
+      <div class="concept">
+        <h4 id="python-3">Equals Sign Clarification</h4>
+        <p>Traditionally, we think of (=) to mean "equals" as in math, like 2+3=5. In Python, = is more like an arrow (pointing from right to left) showing that the value on the right side will be assigned to the name on the left side.</p>
+      </div>
+      <div class="concept">
+        <h4 id="python-4">Common Uses of Variables</h4>
+        <p>Variables can be useful when there is a good chance you will change a value. <br>Variables (should) make it easier to understand the function of the code. <br> Variables can be used to reference other values to make very complex calculations and perform very complex tasks.</p>
+      </div>
+      <div class="concept">
+        <h4 id="python-5">What is the difference between 2+2 and "2"+"2"?</h4>
+        <p>In Python, print 2+2 will show the value 4, while print "2"+"2" will show the value 22. In the first example, Python does the math, in the second, it concatenates the two strings, showing a result of 22.</p>
+      </div>
+      <div class="concept">
+        <h4 id="python-6">Functions</h4>
+          <p>A Function or Procedure is an operation or task that a computer can be programmed to do. <br>
+          <b>Important Distinction - </b> <i>Making</i> a function involved defining what the function does, essentially telling the computer what it will do when you eventually call it to perform the function. <i>Using</i> a function is the act of calling the computer to perform it. <br>
+          Functions can help a programmer avoid repitition by making tedious tasks automated. For example, instead of creating a unique user ID for a customer manually, a progrmamer can write a function which automatically takes a few inputs (ie name, ss#, etc) and creates a unique identifier based on the parameters of the function.<br>
+          The return keyword is used to tell Python what the output of the function is. Without it, the function will not know what you are asking for when you call the function.  
+          </p>
+      </div>
+      <div class="concept">
+        <h4 id="python-7">Structured Data</h4> 
+        <p>Data that is placed into related fields, or sorted in some manner. ie, this string '24 35 75 93 745 02 787 monday tuesday wednesday thursday friday saturday sunday' is technically data, but because it has no structure, it is not very useful. [[monday, 24], [tuesday, 35], [wednesday, 75], [thursday, 93], [friday, 745], [saturday, 02], [sunday, 787] has more structure, and is more powerful and more useful.</p>
+      </div>
+      <div class="concept">
+        <h4 id="python-8">Mutability</h4> 
+        <p>Strings and Lists behave differently. When you've assigned a string to a variable, and then change the string in that variable, you do not actually alter the string itself. Instead, you make an entirely new string, and reassign the variable to the new string. Strings are therefore 'imutable.' Lists, however, are 'mutable.' Rather than creating a new list and reassigning the variable to it, you can change individual elements within the list, which would affect all the variables which refer to the list.</p>
+      </div>
+      <div class="concept">
+        <h4 id="python-9">difference between APPEND and +</h4> 
+        <p>Append adds a new element to the end of the list (changes the original list) whereas + creates a new list, and concatenates the original list and the new element or list into 1 new list.</p>
+      </div>
+      <div class="concept">
+        <h4 id="python-10">Lists</h4> 
+        <p>Lists are a powerful way of structuring data. Unlike strings, which can only contain characters, lists can contain any element, including other lists. Nested lists are a great way of storing and accessing related data.
+        </p>
+      </div>
+      <div class="concept">
+        <h4 id="python-11">For Loops</h4> 
+        <p>structure - for (name) in (list)
+         (indented block</p>
+      </div>
+      <div class="concept">
+        <h4 id="python-12">Index Method</h4> 
+        <p>This is almost a 'find element' function. When you invoke .index on a list, and pass in a value, .index finds the first occurence of the element in the list and gives you the index position of that occurence.</p>
+      </div>
+
+
+    </div>
+    <div>
+      <footer><a href="#top">(top of the page)</a>
+      </footer>  
+    </div>
+  
+   
+  </body>
+</html>

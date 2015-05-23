@@ -1,0 +1,66 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: white;
+	color: black;
+}	
+
+h1 {
+	text-align: center;
+}
+
+
+h2 {
+	text-align: center;
+	font-size: 1.6em;
+}
+
+h3 {
+	text-align: left;
+	font-size: 1.3em;
+}
+
+h4 {
+	font-weight: normal;
+	text-decoration: underline;
+	font-size: 1em;
+}
+
+h5 {
+	text-align: center;
+}
+
+footer {
+	font-family: cursive;
+}
+
+
+.page{
+background-color: grey;
+
+}
+
+.concept-title {
+
+}
+
+.concept-description {
+
+}
+
+.TOC {
+font-style: italic;
+}
+
+.lesson {
+background-color: lightblue;
+}
+
+.concept {
+border-style: double;
+}
